@@ -1,10 +1,176 @@
 *{
 	margin: 0;
 	padding: 0;
+    font-family: 'Roboto';
 }
 ul{
 	list-style-type: none;
 }
 a{
 	text-decoration: none;
+}
+.cupcake{
+    position: absolute;
+    height: 2200px;
+}
+.foam{
+    width: 180px;
+    height: auto;
+    position: absolute;
+    top: 0px;
+    animation-name: yellowfoam;
+    animation-delay: 0.1ms;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    z-index: 1;
+}
+@keyframes yellowfoam{
+    from{
+        top:0px;
+    }
+    to{
+        top: 879px;
+    }
+}
+.tart{
+    width: 180px;
+    height: auto;
+    position: absolute;
+    bottom: 0px;
+    animation-name: cupcaketart;
+    animation-delay: 0.1ms;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes cupcaketart{
+    from{
+        bottom:0px;
+    }
+    to{
+        bottom: 1100px;
+    }
+}
+main{
+    width:1440px;
+    width: auto;
+    margin-left: 180px;
+}
+.headerbarimg{
+    width: 1440px;
+    height: auto;
+}
+header{
+    position: fixed;
+    width: 1440px;
+    background-color: cornflowerblue;
+    opacity: 0.5;
+}
+header:hover{
+    background-color: darkcyan;
+    opacity: 1;
+}
+.navbar li{
+    display: inline-block;
+    margin: 20px;
+}
+.navbar a{
+    color: coral;
+    font-size: 18px;
+    line-height: 33.3px;
+}
+.navbar a:hover{
+    color: white;
+}
+header img{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+.logotag{
+    display: inline-block;
+    margin: 30px;
+}
+.navbar{
+    display: inline-block;
+    margin-left: 600px;
+}
+.container{
+    box-sizing: border-box;
+    margin: 90px 30px;
+    width: 1440px;
+}
+h2{
+    text-transform: uppercase;
+    font-size: 60px;
+    line-height: 60px;
+    padding: 0 490px;
+    color: #a88435;
+}
+article{
+    display: inline-block;
+    margin: 0 70px;
+}
+.articlebar{
+    margin-top: 60px;
+}
+article img{
+    width: 320px;
+    height: auto;
+}
+article ol{
+    width: 320px;
+}
+/* .scones{
+    padding-bottom: 30px;
+} */
+.product{
+    width: 1440px;
+    height: auto;
+}
+footer{
+    box-sizing: border-box;
+    margin-left: 180px;
+    width: 1440px;
+    background-color: violet;
+}
+footer:hover{
+    background: #dbabdb;
+}
+footer a{
+    color: white;
+    font-size: 18px;
+    line-height: 33.3px;
+}
+footer a:hover{
+    color: black;
+}
+footer li{
+    display: inline-block;
+    margin: 30px;
+}
+.footernavbar{
+    display: inline-block;
+}
+.footercookie{
+    display: inline-block;
+    margin-left: 600px;
+    position: absolute;
+    animation-name: cookie;
+    animation-delay: 0;
+    animation-iteration-count:infinite;
+    animation-duration: 2s;
+}
+@keyframes cookie{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
